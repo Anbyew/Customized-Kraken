@@ -25,7 +25,7 @@ use File::Basename;
 use Getopt::Long;
 
 my $PROG = basename $0;
-my $KRAKEN_DIR = "#####=KRAKEN_DIR=#####";
+my $KRAKEN_DIR = "/Users/workmonster/Desktop/kraken";
 
 # Test to see if the executables got moved, try to recover if we can
 if (! -e "$KRAKEN_DIR/classify") {
@@ -241,7 +241,7 @@ sub display_help {
 }
 
 sub display_version {
-  print "Kraken version #####=VERSION=#####\n";
+  print "Kraken version 0.10.6-unreleased\n";
   print "Copyright 2013-2015, Derrick Wood (dwood\@cs.jhu.edu)\n";
   exit 0;
 }
